@@ -35,6 +35,8 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::resource('admin/products', AdminProductController::class)->except([
         'edit', 'store'
     ]);
+    Route::get('admin/products', [AdminProductController::class, 'index'])->name('admin.products.index');
+
     Route::get('admin/products/create', [AdminProductController::class, 'create'])->name('admin.products.create');
 
     Route::get('admin/products/{product}/edit', [AdminProductController::class, 'edit'])->name('admin.products.edit');

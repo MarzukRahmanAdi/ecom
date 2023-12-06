@@ -143,7 +143,7 @@
                                     <a href="javascript:;"><i class="bi bi-zoom-in"></i></a>
                                 </div>
                                 <a href="javascript:;">
-                                    <img src="{{ $product->imageLink }}" class="card-img-top" alt="...">
+                                    <img style="width:360px; height:300px; object-fit:cover" src="{{ $product->imageLink }}" class="card-img-top" alt="...">
                                 </a>
                             </div>
                             <div class="card-body border-top">
