@@ -32,8 +32,17 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware(['auth', 'admin'])->group(function () {
-    Route::resource('admin/products', AdminProductController::class);
+    Route::resource('admin/products', AdminProductController::class)->except([
+        'edit', 'store'
+    ]);
+    Route::get('admin/products/create', [AdminProductController::class, 'create'])->name('admin.products.create');
+
+    Route::get('admin/products/{product}/edit', [AdminProductController::class, 'edit'])->name('admin.products.edit');
+    Route::post('admin/products/store', [AdminProductController::class, 'store'])->name('admin.products.store');
+    Route::put('admin/products/{product}', [AdminProductController::class, 'update'])->name('admin.products.update');
+
 });
+
 
 Route::get('/products', [ProductController::class, 'product']);
 Route::get('/products/sort/{minPrice}/{maxPrice}', [ProductController::class, 'sortByPriceRange']);
