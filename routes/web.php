@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,7 @@ use App\Http\Controllers\CartController;
 |
 */
 
-Route::get('/', [ProductController::class, 'index'])->name('home');
+Route::get('/', [MainController::class, 'index'])->name('home');
 
 
 Route::get('/dashboard', function () {
@@ -31,19 +32,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::middleware(['auth', 'admin'])->group(function () {
-    Route::resource('admin/products', AdminProductController::class)->except([
-        'edit', 'store'
-    ]);
-    Route::get('admin/products', [AdminProductController::class, 'index'])->name('admin.products.index');
 
-    Route::get('admin/products/create', [AdminProductController::class, 'create'])->name('admin.products.create');
-
-    Route::get('admin/products/{product}/edit', [AdminProductController::class, 'edit'])->name('admin.products.edit');
-    Route::post('admin/products/store', [AdminProductController::class, 'store'])->name('admin.products.store');
-    Route::put('admin/products/{product}', [AdminProductController::class, 'update'])->name('admin.products.update');
-
-});
 
 
 Route::get('/products', [ProductController::class, 'product']);
@@ -59,5 +48,17 @@ Route::post('/contact/store', [ContactController::class, 'store'])->name('contac
 Route::post('/products/sort', [ProductController::class, 'sortByPriceRange'])->name('products.sortByPriceRange');
 Route::post('/products/sortByPrice', [ProductController::class, 'sortByPrice'])->name('products.sortByPrice');
 
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::resource('admin/products', AdminProductController::class)->except([
+        'edit', 'store'
+    ]);
+    Route::get('admin/products/create', [AdminProductController::class, 'create'])->name('admin.products.create');
+
+    Route::get('admin/products/{product}/edit', [AdminProductController::class, 'edit'])->name('admin.products.edit');
+    Route::post('admin/products/store', [AdminProductController::class, 'store'])->name('admin.products.store');
+    Route::put('admin/products/{product}', [AdminProductController::class, 'update'])->name('admin.products.update');
+    Route::get('admin/products', [AdminProductController::class, 'index'])->name('admin.products.index');
+
+});
 
 require __DIR__.'/auth.php';

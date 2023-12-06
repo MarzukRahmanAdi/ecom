@@ -59,16 +59,25 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('cart.index') }}">Cart</a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" target="_blank" href="{{ route('login') }}" >
-                    @if (Auth::check())
-                            <div>Hello, {{ Auth::user()->name }}</div>
-                        @else
-                            <div>Login</div>
-                        @endif
-                    </a>
-                    <!-- Dropdown Menu Goes Here -->
-                </li>
+                <li class="nav-item">
+              @if (Auth::check())
+              <a class="nav-link" href="#">
+                <div>Hello, {{ Auth::user()->name }}</div>
+              </a>
+              @else
+              <a class="nav-link" href="{{ route('login') }}" target="_blank">
+                <div>Login</div>
+              </a>
+              @endif
+            </li>
+            <li class="nav-item">
+              @if (Auth::check())
+              @else
+              <a class="nav-link" href="{{ route('register') }}" target="_blank">
+                <div>Register</div>
+              </a>
+              @endif
+            </li>
             </ul>
         </div>
     </div>
