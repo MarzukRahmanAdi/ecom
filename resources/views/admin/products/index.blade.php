@@ -2,7 +2,7 @@
 @push('styles')
     <style>
         .full-width-table {
-            width: 100%;
+            width: 100vw !important;
         }
 
         .custom-container {

@@ -1,0 +1,262 @@
+Date : 2023-12-07 04:09:56
+Directory : d:\programming\uniProject\uniProject
+Total : 165 files,  29992 codes, 1363 comments, 2697 blanks, all 34052 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |          9 |     11,483 |         56 |        511 |     12,050 |
+| JSON       |          4 |     10,171 |          0 |          4 |     10,175 |
+| PHP        |        128 |      5,423 |      1,204 |      1,160 |      7,787 |
+| JavaScript |         16 |      2,324 |         85 |        941 |      3,350 |
+| SCSS       |          2 |        257 |         10 |         29 |        296 |
+| Less       |          2 |        239 |          6 |         25 |        270 |
+| Markdown   |          1 |         45 |          0 |         22 |         67 |
+| XML        |          2 |         42 |          2 |          3 |         47 |
+| Ruby       |          1 |          8 |          0 |          2 |         10 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                               | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                  |        165 |     29,992 |      1,363 |      2,697 |     34,052 |
+| . (Files)                                                                                                          |          9 |     10,280 |          4 |         34 |     10,318 |
+| app                                                                                                                |         41 |        864 |        261 |        259 |      1,384 |
+| app\Console                                                                                                        |          1 |         15 |          7 |          6 |         28 |
+| app\Exceptions                                                                                                     |          1 |         17 |          9 |          5 |         31 |
+| app\Http                                                                                                           |         28 |        676 |        179 |        191 |      1,046 |
+| app\Http (Files)                                                                                                   |          1 |         42 |         21 |          7 |         70 |
+| app\Http\Controllers                                                                                               |         15 |        456 |         70 |        123 |        649 |
+| app\Http\Controllers (Files)                                                                                       |          6 |        222 |         10 |         59 |        291 |
+| app\Http\Controllers\Auth                                                                                          |          9 |        234 |         60 |         64 |        358 |
+| app\Http\Middleware                                                                                                |         10 |        112 |         62 |         43 |        217 |
+| app\Http\Requests                                                                                                  |          2 |         66 |         26 |         18 |        110 |
+| app\Http\Requests (Files)                                                                                          |          1 |         15 |          5 |          4 |         24 |
+| app\Http\Requests\Auth                                                                                             |          1 |         51 |         21 |         14 |         86 |
+| app\Models                                                                                                         |          4 |         54 |         16 |         21 |         91 |
+| app\Providers                                                                                                      |          5 |         80 |         44 |         28 |        152 |
+| app\View                                                                                                           |          2 |         22 |          6 |          8 |         36 |
+| app\View\Components                                                                                                |          2 |         22 |          6 |          8 |         36 |
+| bootstrap                                                                                                          |          1 |         17 |         30 |          9 |         56 |
+| config                                                                                                             |         15 |        532 |        763 |        240 |      1,535 |
+| database                                                                                                           |         13 |        286 |         68 |         58 |        412 |
+| database\factories                                                                                                 |          1 |         25 |         11 |          6 |         42 |
+| database\migrations                                                                                                |          8 |        172 |         48 |         33 |        253 |
+| database\seeders                                                                                                   |          4 |         89 |          9 |         19 |        117 |
+| public                                                                                                             |         24 |     14,286 |        160 |      1,502 |     15,948 |
+| public (Files)                                                                                                     |          1 |         14 |         30 |         12 |         56 |
+| public\assets                                                                                                      |         23 |     14,272 |        130 |      1,490 |     15,892 |
+| public\assets\css                                                                                                  |          4 |     11,200 |         41 |        459 |     11,700 |
+| public\assets\js                                                                                                   |          7 |        155 |         13 |         75 |        243 |
+| public\assets\plugins                                                                                              |         12 |      2,917 |         76 |        956 |      3,949 |
+| public\assets\plugins\perfect-scrollbar                                                                            |          2 |          2 |          0 |          0 |          2 |
+| public\assets\plugins\perfect-scrollbar\css                                                                        |          1 |          1 |          0 |          0 |          1 |
+| public\assets\plugins\perfect-scrollbar\js                                                                         |          1 |          1 |          0 |          0 |          1 |
+| public\assets\plugins\slick                                                                                        |         10 |      2,915 |         76 |        956 |      3,947 |
+| public\assets\plugins\slick (Files)                                                                                |          9 |      2,902 |         76 |        954 |      3,932 |
+| public\assets\plugins\slick\fonts                                                                                  |          1 |         13 |          0 |          2 |         15 |
+| resources                                                                                                          |         44 |      3,268 |         25 |        421 |      3,714 |
+| resources (Files)                                                                                                  |          1 |          0 |          0 |          1 |          1 |
+| resources\css                                                                                                      |          1 |          3 |          0 |          1 |          4 |
+| resources\js                                                                                                       |          2 |          7 |         23 |         11 |         41 |
+| resources\views                                                                                                    |         40 |      3,258 |          2 |        408 |      3,668 |
+| resources\views (Files)                                                                                            |          6 |      2,406 |          0 |        236 |      2,642 |
+| resources\views\admin                                                                                              |          5 |        112 |          0 |         25 |        137 |
+| resources\views\admin (Files)                                                                                      |          1 |          0 |          0 |          1 |          1 |
+| resources\views\admin\products                                                                                     |          4 |        112 |          0 |         24 |        136 |
+| resources\views\auth                                                                                               |          6 |        182 |          0 |         45 |        227 |
+| resources\views\cart                                                                                               |          1 |         30 |          0 |          5 |         35 |
+| resources\views\components                                                                                         |         13 |        162 |          2 |         28 |        192 |
+| resources\views\contacts                                                                                           |          1 |         27 |          0 |          8 |         35 |
+| resources\views\layouts                                                                                            |          3 |        149 |          0 |         24 |        173 |
+| resources\views\products                                                                                           |          1 |         24 |          0 |          3 |         27 |
+| resources\views\profile                                                                                            |          4 |        166 |          0 |         34 |        200 |
+| resources\views\profile (Files)                                                                                    |          1 |         26 |          0 |          4 |         30 |
+| resources\views\profile\partials                                                                                   |          3 |        140 |          0 |         30 |        170 |
+| routes                                                                                                             |          5 |         96 |         40 |         45 |        181 |
+| tests                                                                                                              |         11 |        356 |         10 |        128 |        494 |
+| tests (Files)                                                                                                      |          2 |         20 |          3 |         10 |         33 |
+| tests\Feature                                                                                                      |          8 |        326 |          4 |        114 |        444 |
+| tests\Feature (Files)                                                                                              |          2 |         87 |          4 |         29 |        120 |
+| tests\Feature\Auth                                                                                                 |          6 |        239 |          0 |         85 |        324 |
+| tests\Unit                                                                                                         |          1 |         10 |          3 |          4 |         17 |
+| vendor                                                                                                             |          2 |          7 |          2 |          1 |         10 |
+| vendor\spatie                                                                                                      |          2 |          7 |          2 |          1 |         10 |
+| vendor\spatie\ignition                                                                                             |          2 |          7 |          2 |          1 |         10 |
+| vendor\spatie\ignition\resources                                                                                   |          2 |          7 |          2 |          1 |         10 |
+| vendor\spatie\ignition\resources\compiled                                                                          |          2 |          7 |          2 |          1 |         10 |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                           | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\programming\uniProject\uniProject\README.md                                                                     | Markdown   |         45 |          0 |         22 |         67 |
+| d:\programming\uniProject\uniProject\app\Console\Kernel.php                                                        | PHP        |         15 |          7 |          6 |         28 |
+| d:\programming\uniProject\uniProject\app\Exceptions\Handler.php                                                    | PHP        |         17 |          9 |          5 |         31 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\AdminProductController.php                               | PHP        |         60 |          0 |         16 |         76 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Auth\AuthenticatedSessionController.php                  | PHP        |         29 |          9 |         11 |         49 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Auth\ConfirmablePasswordController.php                   | PHP        |         29 |          6 |          7 |         42 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Auth\EmailVerificationNotificationController.php         | PHP        |         17 |          3 |          6 |         26 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Auth\EmailVerificationPromptController.php               | PHP        |         16 |          3 |          4 |         23 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Auth\NewPasswordController.php                           | PHP        |         40 |         14 |          8 |         62 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Auth\PasswordController.php                              | PHP        |         21 |          3 |          6 |         30 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Auth\PasswordResetLinkController.php                     | PHP        |         27 |         11 |          7 |         45 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Auth\RegisteredUserController.php                        | PHP        |         35 |          8 |          9 |         52 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Auth\VerifyEmailController.php                           | PHP        |         20 |          3 |          6 |         29 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\CartController.php                                       | PHP        |         59 |          1 |          5 |         65 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\ContactController.php                                    | PHP        |         21 |          0 |          7 |         28 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\Controller.php                                           | PHP        |          9 |          0 |          4 |         13 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\ProductController.php                                    | PHP        |         35 |          0 |         13 |         48 |
+| d:\programming\uniProject\uniProject\app\Http\Controllers\ProfileController.php                                    | PHP        |         38 |          9 |         14 |         61 |
+| d:\programming\uniProject\uniProject\app\Http\Kernel.php                                                           | PHP        |         42 |         21 |          7 |         70 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\AdminMiddleware.php                                       | PHP        |         12 |          5 |          4 |         21 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\Authenticate.php                                          | PHP        |         11 |          3 |          4 |         18 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\EncryptCookies.php                                        | PHP        |          8 |          6 |          4 |         18 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\PreventRequestsDuringMaintenance.php                      | PHP        |          8 |          6 |          4 |         18 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\RedirectIfAuthenticated.php                               | PHP        |         20 |          5 |          6 |         31 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\TrimStrings.php                                           | PHP        |         11 |          5 |          4 |         20 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\TrustHosts.php                                            | PHP        |         12 |          5 |          4 |         21 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\TrustProxies.php                                          | PHP        |         14 |         10 |          5 |         29 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\ValidateSignature.php                                     | PHP        |          8 |         11 |          4 |         23 |
+| d:\programming\uniProject\uniProject\app\Http\Middleware\VerifyCsrfToken.php                                       | PHP        |          8 |          6 |          4 |         18 |
+| d:\programming\uniProject\uniProject\app\Http\Requests\Auth\LoginRequest.php                                       | PHP        |         51 |         21 |         14 |         86 |
+| d:\programming\uniProject\uniProject\app\Http\Requests\ProfileUpdateRequest.php                                    | PHP        |         15 |          5 |          4 |         24 |
+| d:\programming\uniProject\uniProject\app\Models\Cart.php                                                           | PHP        |         13 |          0 |          5 |         18 |
+| d:\programming\uniProject\uniProject\app\Models\Contact.php                                                        | PHP        |          9 |          0 |          4 |         13 |
+| d:\programming\uniProject\uniProject\app\Models\Product.php                                                        | PHP        |          9 |          0 |          5 |         14 |
+| d:\programming\uniProject\uniProject\app\Models\User.php                                                           | PHP        |         23 |         16 |          7 |         46 |
+| d:\programming\uniProject\uniProject\app\Providers\AppServiceProvider.php                                          | PHP        |         12 |          8 |          5 |         25 |
+| d:\programming\uniProject\uniProject\app\Providers\AuthServiceProvider.php                                         | PHP        |         11 |         11 |          5 |         27 |
+| d:\programming\uniProject\uniProject\app\Providers\BroadcastServiceProvider.php                                    | PHP        |         12 |          3 |          5 |         20 |
+| d:\programming\uniProject\uniProject\app\Providers\EventServiceProvider.php                                        | PHP        |         21 |         12 |          6 |         39 |
+| d:\programming\uniProject\uniProject\app\Providers\RouteServiceProvider.php                                        | PHP        |         24 |         10 |          7 |         41 |
+| d:\programming\uniProject\uniProject\app\View\Components\AppLayout.php                                             | PHP        |         11 |          3 |          4 |         18 |
+| d:\programming\uniProject\uniProject\app\View\Components\GuestLayout.php                                           | PHP        |         11 |          3 |          4 |         18 |
+| d:\programming\uniProject\uniProject\bootstrap\app.php                                                             | PHP        |         17 |         30 |          9 |         56 |
+| d:\programming\uniProject\uniProject\composer.json                                                                 | JSON       |         68 |          0 |          1 |         69 |
+| d:\programming\uniProject\uniProject\composer.lock                                                                 | JSON       |      8,287 |          0 |          1 |      8,288 |
+| d:\programming\uniProject\uniProject\config\app.php                                                                | PHP        |         27 |        131 |         31 |        189 |
+| d:\programming\uniProject\uniProject\config\auth.php                                                               | PHP        |         28 |         74 |         14 |        116 |
+| d:\programming\uniProject\uniProject\config\broadcasting.php                                                       | PHP        |         36 |         23 |         13 |         72 |
+| d:\programming\uniProject\uniProject\config\cache.php                                                              | PHP        |         59 |         34 |         19 |        112 |
+| d:\programming\uniProject\uniProject\config\cors.php                                                               | PHP        |          3 |         29 |          3 |         35 |
+| d:\programming\uniProject\uniProject\config\database.php                                                           | PHP        |         83 |         47 |         22 |        152 |
+| d:\programming\uniProject\uniProject\config\filesystems.php                                                        | PHP        |         32 |         32 |         13 |         77 |
+| d:\programming\uniProject\uniProject\config\hashing.php                                                            | PHP        |         14 |         32 |          9 |         55 |
+| d:\programming\uniProject\uniProject\config\logging.php                                                            | PHP        |         79 |         34 |         19 |        132 |
+| d:\programming\uniProject\uniProject\config\mail.php                                                               | PHP        |         54 |         54 |         19 |        127 |
+| d:\programming\uniProject\uniProject\config\queue.php                                                              | PHP        |         51 |         42 |         17 |        110 |
+| d:\programming\uniProject\uniProject\config\sanctum.php                                                            | PHP        |         17 |         53 |         14 |         84 |
+| d:\programming\uniProject\uniProject\config\services.php                                                           | PHP        |         17 |         11 |          7 |         35 |
+| d:\programming\uniProject\uniProject\config\session.php                                                            | PHP        |         22 |        147 |         33 |        202 |
+| d:\programming\uniProject\uniProject\config\view.php                                                               | PHP        |         10 |         20 |          7 |         37 |
+| d:\programming\uniProject\uniProject\database\factories\UserFactory.php                                            | PHP        |         25 |         11 |          6 |         42 |
+| d:\programming\uniProject\uniProject\database\migrations\2014_10_12_000000_create_users_table.php                  | PHP        |         23 |          6 |          4 |         33 |
+| d:\programming\uniProject\uniProject\database\migrations\2014_10_12_100000_create_password_reset_tokens_table.php  | PHP        |         19 |          6 |          4 |         29 |
+| d:\programming\uniProject\uniProject\database\migrations\2019_08_19_000000_create_failed_jobs_table.php            | PHP        |         23 |          6 |          4 |         33 |
+| d:\programming\uniProject\uniProject\database\migrations\2019_12_14_000001_create_personal_access_tokens_table.php | PHP        |         24 |          6 |          4 |         34 |
+| d:\programming\uniProject\uniProject\database\migrations\2023_12_04_190415_adding_roles.php                        | PHP        |         19 |          6 |          4 |         29 |
+| d:\programming\uniProject\uniProject\database\migrations\2023_12_04_190549_create_products_table.php               | PHP        |         22 |          6 |          5 |         33 |
+| d:\programming\uniProject\uniProject\database\migrations\2023_12_04_190714_create_carts_table.php                  | PHP        |         21 |          6 |          4 |         31 |
+| d:\programming\uniProject\uniProject\database\migrations\2023_12_04_191938_create_contacts_table.php               | PHP        |         21 |          6 |          4 |         31 |
+| d:\programming\uniProject\uniProject\database\seeders\DatabaseSeeder.php                                           | PHP        |          9 |          9 |          5 |         23 |
+| d:\programming\uniProject\uniProject\database\seeders\MainSeeder.php                                               | PHP        |         13 |          0 |          4 |         17 |
+| d:\programming\uniProject\uniProject\database\seeders\ProductSeeder.php                                            | PHP        |         44 |          0 |          5 |         49 |
+| d:\programming\uniProject\uniProject\database\seeders\UserSeeder.php                                               | PHP        |         23 |          0 |          5 |         28 |
+| d:\programming\uniProject\uniProject\package-lock.json                                                             | JSON       |      1,798 |          0 |          1 |      1,799 |
+| d:\programming\uniProject\uniProject\package.json                                                                  | JSON       |         18 |          0 |          1 |         19 |
+| d:\programming\uniProject\uniProject\phpunit.xml                                                                   | XML        |         29 |          2 |          1 |         32 |
+| d:\programming\uniProject\uniProject\postcss.config.js                                                             | JavaScript |          6 |          0 |          1 |          7 |
+| d:\programming\uniProject\uniProject\public\assets\css\bootstrap.min.css                                           | CSS        |      9,893 |          7 |          1 |      9,901 |
+| d:\programming\uniProject\uniProject\public\assets\css\dark-theme.css                                              | CSS        |        462 |          2 |        250 |        714 |
+| d:\programming\uniProject\uniProject\public\assets\css\pace.min.css                                                | CSS        |        101 |          0 |          0 |        101 |
+| d:\programming\uniProject\uniProject\public\assets\css\style.css                                                   | CSS        |        744 |         32 |        208 |        984 |
+| d:\programming\uniProject\uniProject\public\assets\js\bootstrap.bundle.min.js                                      | JavaScript |          1 |          6 |          0 |          7 |
+| d:\programming\uniProject\uniProject\public\assets\js\index.js                                                     | JavaScript |        111 |          1 |         37 |        149 |
+| d:\programming\uniProject\uniProject\public\assets\js\jquery.min.js                                                | JavaScript |          1 |          1 |          1 |          3 |
+| d:\programming\uniProject\uniProject\public\assets\js\loader.js                                                    | JavaScript |          3 |          0 |          6 |          9 |
+| d:\programming\uniProject\uniProject\public\assets\js\main.js                                                      | JavaScript |         27 |          3 |         21 |         51 |
+| d:\programming\uniProject\uniProject\public\assets\js\pace.min.js                                                  | JavaScript |          1 |          0 |          0 |          1 |
+| d:\programming\uniProject\uniProject\public\assets\js\shop-grid.js                                                 | JavaScript |         11 |          2 |         10 |         23 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\perfect-scrollbar\css\perfect-scrollbar.css             | CSS        |          1 |          0 |          0 |          1 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\perfect-scrollbar\js\perfect-scrollbar.js               | JavaScript |          1 |          0 |          0 |          1 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\config.rb                                         | Ruby       |          8 |          0 |          2 |         10 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\fonts\slick.svg                                   | XML        |         13 |          0 |          2 |         15 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\slick-theme.css                                   | CSS        |        173 |         12 |         37 |        222 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\slick-theme.less                                  | Less       |        152 |          5 |         12 |        169 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\slick-theme.scss                                  | SCSS       |        170 |          9 |         16 |        195 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\slick.css                                         | CSS        |        105 |          1 |         14 |        120 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\slick.js                                          | JavaScript |      2,119 |         47 |        846 |      3,012 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\slick.less                                        | Less       |         87 |          1 |         13 |        101 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\slick.min.js                                      | JavaScript |          1 |          0 |          1 |          2 |
+| d:\programming\uniProject\uniProject\public\assets\plugins\slick\slick.scss                                        | SCSS       |         87 |          1 |         13 |        101 |
+| d:\programming\uniProject\uniProject\public\index.php                                                              | PHP        |         14 |         30 |         12 |         56 |
+| d:\programming\uniProject\uniProject\resources\css\app.css                                                         | CSS        |          3 |          0 |          1 |          4 |
+| d:\programming\uniProject\uniProject\resources\js\app.js                                                           | JavaScript |          4 |          0 |          4 |          8 |
+| d:\programming\uniProject\uniProject\resources\js\bootstrap.js                                                     | JavaScript |          3 |         23 |          7 |         33 |
+| d:\programming\uniProject\uniProject\resources\productAdd.blade.php                                                | PHP        |          0 |          0 |          1 |          1 |
+| d:\programming\uniProject\uniProject\resources\views\admin\products.blade.php                                      | PHP        |          0 |          0 |          1 |          1 |
+| d:\programming\uniProject\uniProject\resources\views\admin\products\create.blade.php                               | PHP        |         31 |          0 |          9 |         40 |
+| d:\programming\uniProject\uniProject\resources\views\admin\products\edit.blade.php                                 | PHP        |         32 |          0 |          9 |         41 |
+| d:\programming\uniProject\uniProject\resources\views\admin\products\index.blade.php                                | PHP        |         49 |          0 |          5 |         54 |
+| d:\programming\uniProject\uniProject\resources\views\admin\products\store.blade.php                                | PHP        |          0 |          0 |          1 |          1 |
+| d:\programming\uniProject\uniProject\resources\views\auth\confirm-password.blade.php                               | PHP        |         22 |          0 |          6 |         28 |
+| d:\programming\uniProject\uniProject\resources\views\auth\forgot-password.blade.php                                | PHP        |         21 |          0 |          5 |         26 |
+| d:\programming\uniProject\uniProject\resources\views\auth\login.blade.php                                          | PHP        |         39 |          0 |          9 |         48 |
+| d:\programming\uniProject\uniProject\resources\views\auth\register.blade.php                                       | PHP        |         42 |          0 |         11 |         53 |
+| d:\programming\uniProject\uniProject\resources\views\auth\reset-password.blade.php                                 | PHP        |         32 |          0 |          8 |         40 |
+| d:\programming\uniProject\uniProject\resources\views\auth\verify-email.blade.php                                   | PHP        |         26 |          0 |          6 |         32 |
+| d:\programming\uniProject\uniProject\resources\views\cart.blade.php                                                | PHP        |        571 |          0 |         57 |        628 |
+| d:\programming\uniProject\uniProject\resources\views\cart\index.blade.php                                          | PHP        |         30 |          0 |          5 |         35 |
+| d:\programming\uniProject\uniProject\resources\views\components\application-logo.blade.php                         | PHP        |          3 |          0 |          1 |          4 |
+| d:\programming\uniProject\uniProject\resources\views\components\auth-session-status.blade.php                      | PHP        |          6 |          0 |          2 |          8 |
+| d:\programming\uniProject\uniProject\resources\views\components\danger-button.blade.php                            | PHP        |          3 |          0 |          1 |          4 |
+| d:\programming\uniProject\uniProject\resources\views\components\dropdown-link.blade.php                            | PHP        |          1 |          0 |          1 |          2 |
+| d:\programming\uniProject\uniProject\resources\views\components\dropdown.blade.php                                 | PHP        |         39 |          0 |          5 |         44 |
+| d:\programming\uniProject\uniProject\resources\views\components\input-error.blade.php                              | PHP        |          8 |          0 |          2 |         10 |
+| d:\programming\uniProject\uniProject\resources\views\components\input-label.blade.php                              | PHP        |          4 |          0 |          2 |          6 |
+| d:\programming\uniProject\uniProject\resources\views\components\modal.blade.php                                    | PHP        |         72 |          2 |          4 |         78 |
+| d:\programming\uniProject\uniProject\resources\views\components\nav-link.blade.php                                 | PHP        |          9 |          0 |          3 |         12 |
+| d:\programming\uniProject\uniProject\resources\views\components\primary-button.blade.php                           | PHP        |          3 |          0 |          1 |          4 |
+| d:\programming\uniProject\uniProject\resources\views\components\responsive-nav-link.blade.php                      | PHP        |          9 |          0 |          3 |         12 |
+| d:\programming\uniProject\uniProject\resources\views\components\secondary-button.blade.php                         | PHP        |          3 |          0 |          1 |          4 |
+| d:\programming\uniProject\uniProject\resources\views\components\text-input.blade.php                               | PHP        |          2 |          0 |          2 |          4 |
+| d:\programming\uniProject\uniProject\resources\views\contact.blade.php                                             | PHP        |        542 |          0 |         54 |        596 |
+| d:\programming\uniProject\uniProject\resources\views\contacts\create.blade.php                                     | PHP        |         27 |          0 |          8 |         35 |
+| d:\programming\uniProject\uniProject\resources\views\dashboard.blade.php                                           | PHP        |         16 |          0 |          2 |         18 |
+| d:\programming\uniProject\uniProject\resources\views\index.blade.php                                               | PHP        |        632 |          0 |         49 |        681 |
+| d:\programming\uniProject\uniProject\resources\views\layouts\app.blade.php                                         | PHP        |         27 |          0 |          3 |         30 |
+| d:\programming\uniProject\uniProject\resources\views\layouts\guest.blade.php                                       | PHP        |         26 |          0 |          5 |         31 |
+| d:\programming\uniProject\uniProject\resources\views\layouts\navigation.blade.php                                  | PHP        |         96 |          0 |         16 |        112 |
+| d:\programming\uniProject\uniProject\resources\views\product.blade.php                                             | PHP        |        527 |          0 |         51 |        578 |
+| d:\programming\uniProject\uniProject\resources\views\products\index.blade.php                                      | PHP        |         24 |          0 |          3 |         27 |
+| d:\programming\uniProject\uniProject\resources\views\profile\edit.blade.php                                        | PHP        |         26 |          0 |          4 |         30 |
+| d:\programming\uniProject\uniProject\resources\views\profile\partials\delete-user-form.blade.php                   | PHP        |         45 |          0 |         11 |         56 |
+| d:\programming\uniProject\uniProject\resources\views\profile\partials\update-password-form.blade.php               | PHP        |         41 |          0 |          8 |         49 |
+| d:\programming\uniProject\uniProject\resources\views\profile\partials\update-profile-information-form.blade.php    | PHP        |         54 |          0 |         11 |         65 |
+| d:\programming\uniProject\uniProject\resources\views\welcome.blade.php                                             | PHP        |        118 |          0 |         23 |        141 |
+| d:\programming\uniProject\uniProject\routes\api.php                                                                | PHP        |          6 |         10 |          4 |         20 |
+| d:\programming\uniProject\uniProject\routes\auth.php                                                               | PHP        |         43 |          0 |         17 |         60 |
+| d:\programming\uniProject\uniProject\routes\channels.php                                                           | PHP        |          5 |         10 |          4 |         19 |
+| d:\programming\uniProject\uniProject\routes\console.php                                                            | PHP        |          6 |         10 |          4 |         20 |
+| d:\programming\uniProject\uniProject\routes\web.php                                                                | PHP        |         36 |         10 |         16 |         62 |
+| d:\programming\uniProject\uniProject\tailwind.config.js                                                            | JavaScript |         16 |          2 |          4 |         22 |
+| d:\programming\uniProject\uniProject\tests\CreatesApplication.php                                                  | PHP        |         13 |          3 |          6 |         22 |
+| d:\programming\uniProject\uniProject\tests\Feature\Auth\AuthenticationTest.php                                     | PHP        |         41 |          0 |         15 |         56 |
+| d:\programming\uniProject\uniProject\tests\Feature\Auth\EmailVerificationTest.php                                  | PHP        |         50 |          0 |         16 |         66 |
+| d:\programming\uniProject\uniProject\tests\Feature\Auth\PasswordConfirmationTest.php                               | PHP        |         32 |          0 |         13 |         45 |
+| d:\programming\uniProject\uniProject\tests\Feature\Auth\PasswordResetTest.php                                      | PHP        |         50 |          0 |         22 |         72 |
+| d:\programming\uniProject\uniProject\tests\Feature\Auth\PasswordUpdateTest.php                                     | PHP        |         41 |          0 |         11 |         52 |
+| d:\programming\uniProject\uniProject\tests\Feature\Auth\RegistrationTest.php                                       | PHP        |         25 |          0 |          8 |         33 |
+| d:\programming\uniProject\uniProject\tests\Feature\ExampleTest.php                                                 | PHP        |         11 |          4 |          5 |         20 |
+| d:\programming\uniProject\uniProject\tests\Feature\ProfileTest.php                                                 | PHP        |         76 |          0 |         24 |        100 |
+| d:\programming\uniProject\uniProject\tests\TestCase.php                                                            | PHP        |          7 |          0 |          4 |         11 |
+| d:\programming\uniProject\uniProject\tests\Unit\ExampleTest.php                                                    | PHP        |         10 |          3 |          4 |         17 |
+| d:\programming\uniProject\uniProject\vendor\spatie\ignition\resources\compiled\ignition.css                        | CSS        |          1 |          2 |          0 |          3 |
+| d:\programming\uniProject\uniProject\vendor\spatie\ignition\resources\compiled\ignition.js                         | JavaScript |          6 |          0 |          1 |          7 |
+| d:\programming\uniProject\uniProject\vite.config.js                                                                | JavaScript |         13 |          0 |          2 |         15 |
+| Total                                                                                                              |            |     29,992 |      1,363 |      2,697 |     34,052 |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
