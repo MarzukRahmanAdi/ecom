@@ -110,7 +110,58 @@
 
 
     <!--start tabular product-->
-    
+
+
+
+    <div  class="">
+    <div style="display:flex; width:100%;  justify-content: center;" class="shop-right-sidebar">
+        <div class="card rounded-0">
+            <div class="card-body p-2">
+                <div class="d-flex align-items-center justify-content-between bg-light p-2">
+                    <div class="product-count">{{ count($products) }} Items Found</div>
+                    <div class="view-type hstack gap-2 d-none d-xl-flex">
+                    <form method="get">
+            <label for="sortSelect">Sort By:</label>
+            <select id="sortSelect" class="form-select rounded-0" name="sort_option" onchange="this.form.submit()">
+                <option value="asc" @if($sortOption == 'asc') selected @endif>Price: Low to High</option>
+                <option value="desc" @if($sortOption == 'desc') selected @endif>Price: High to Low</option>
+            </select>
+        </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="product-grid mt-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4">
+                @foreach ($products as $product)
+                    <div class="col">
+                        <div class="card border shadow-none">
+                            <div class="position-relative overflow-hidden">
+                                <div class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
+                                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                                    <a href="javascript:;"><i class="bi bi-basket3"></i></a>
+                                    <a href="javascript:;"><i class="bi bi-zoom-in"></i></a>
+                                </div>
+                                <a href="javascript:;">
+                                    <img src="{{ $product->imageLink }}" class="card-img-top" alt="...">
+                                </a>
+                            </div>
+                            <div class="card-body border-top">
+                                <h5 class="mb-0 fw-bold product-short-title">{{ $product->title }}</h5>
+                                <p class="mb-0 product-short-name">{{ $product->description }}</p>
+                                <div class="product-price d-flex align-items-center gap-2 mt-2">
+                                    <div class="h6 fw-bold">${{ $product->price }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <!--end tabular product-->
 
 

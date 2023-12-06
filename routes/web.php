@@ -18,7 +18,7 @@ use App\Http\Controllers\CartController;
 |
 */
 
-Route::get('/', [ProductController::class, 'index']);
+Route::get('/', [ProductController::class, 'index'])->name('home');
 
 
 Route::get('/dashboard', function () {
@@ -35,7 +35,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::resource('admin/products', AdminProductController::class);
 });
 
-Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products', [ProductController::class, 'product']);
 Route::get('/products/sort/{minPrice}/{maxPrice}', [ProductController::class, 'sortByPriceRange']);
 
 Route::get('/cart', [CartController::class, 'showCart'])->name('cart.index');
@@ -43,8 +43,10 @@ Route::post('/cart/add/{product}', [CartController::class, 'addToCart'])->name('
 Route::post('/cart/edit/{cart}', [CartController::class, 'editCart'])->name('cart.edit');
 Route::delete('/cart/delete/{cart}', [CartController::class, 'deleteFromCart'])->name('cart.delete');
 
-Route::get('/contact', [ContactController::class, 'create'])->name('contact.create');
+Route::get('/contact', [ContactController::class, 'create'])->name('contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/products/sort', [ProductController::class, 'sortByPriceRange'])->name('products.sortByPriceRange');
+Route::post('/products/sortByPrice', [ProductController::class, 'sortByPrice'])->name('products.sortByPrice');
 
 
 require __DIR__.'/auth.php';
