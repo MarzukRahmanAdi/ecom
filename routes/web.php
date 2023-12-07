@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminProductController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
@@ -32,15 +33,19 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])
+    ->middleware('auth')
+    ->name('logout');
 
 
 
-Route::get('/products', [ProductController::class, 'product']);
+
+Route::get('/products', [ProductController::class, 'product'])->name('product.index');
 Route::get('/products/sort/{minPrice}/{maxPrice}', [ProductController::class, 'sortByPriceRange']);
 
 Route::get('/cart', [CartController::class, 'showCart'])->name('cart.index');
 Route::post('/cart/add/{product}', [CartController::class, 'addToCart'])->name('cart.add');
-Route::post('/cart/edit/{cart}', [CartController::class, 'editCart'])->name('cart.edit');
+Route::put('/cart/edit/{cart}', [CartController::class, 'editCart'])->name('cart.edit');
 Route::delete('/cart/delete/{cart}', [CartController::class, 'deleteFromCart'])->name('cart.delete');
 
 Route::get('/contact', [ContactController::class, 'create'])->name('contact');

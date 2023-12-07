@@ -19,7 +19,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/dark-theme.css" rel="stylesheet">
 
-    <title>Shopingo - eCommerce HTML Template</title>
+    <title>sayonara</title>
 </head>
 
 <body>
@@ -37,68 +37,74 @@
 
     <!--start top header-->
     <header class="top-header">
-    <nav class="navbar navbar-expand-xl w-100 navbar-dark container gap-3">
-    <a class="navbar-brand d-none d-xl-inline" href="#"><img src="assets/images/logo.webp" class="logo-img" alt=""></a>
-    <a class="mobile-menu-btn d-inline d-xl-none" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-        <i class="bi bi-list"></i>
-    </a>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
-        <div class="offcanvas-header">
-            <div class="offcanvas-logo"><img src="assets/images/logo.webp" class="logo-img" alt=""></div>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body primary-menu">
-            <ul class="navbar-nav justify-content-start flex-grow-1 gap-1">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact') }}">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('cart.index') }}">Cart</a>
-                </li>
-                <li class="nav-item">
-              @if (Auth::check())
-              <a class="nav-link" href="#">
-                <div>Hello, {{ Auth::user()->name }}</div>
-              </a>
-              @else
-              <a class="nav-link" href="{{ route('login') }}" target="_blank">
-                <div>Login</div>
-              </a>
-              @endif
-            </li>
-            <li class="nav-item">
-              @if (Auth::check())
-              @else
-              <a class="nav-link" href="{{ route('register') }}" target="_blank">
-                <div>Register</div>
-              </a>
-              @endif
-            </li>
-            </ul>
-        </div>
-    </div>
-    <ul class="navbar-nav secondary-menu flex-row">
-        <li class="nav-item">
-            <a class="nav-link dark-mode-icon" href="javascript:;">
-                <div class="mode-icon">
-                    <i class="bi bi-moon"></i>
+        <nav class="navbar navbar-expand-xl w-100 navbar-dark container gap-3">
+            <a class="navbar-brand d-none d-xl-inline" href="#"><img src="assets/images/logo.webp" class="logo-img"
+                    alt=""></a>
+            <a class="mobile-menu-btn d-inline d-xl-none" href="javascript:;" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="bi bi-list"></i>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <div class="offcanvas-logo"><img src="assets/images/logo.webp" class="logo-img" alt=""></div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-            </a>
-        </li>
-        <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
-            <a class="nav-link position-relative" href="javascript:;">
-                <div class="cart-badge">0</div>
-                <i class="bi bi-basket2"></i>
-            </a>
-        </li>
-    </ul>
-</nav>
+                <div class="offcanvas-body primary-menu">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('home') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('cart.index') }}">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('product.index') }}">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            @if (Auth::check())
+                            <a class="nav-link" href="#">
+                                <div>Hello, {{ Auth::user()->name }}</div>
+                            </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+                            </li>
+                            @else
+                            <a class="nav-link" href="{{ route('login') }}" target="_blank">
+                                <div>Login</div>
+                            </a>
+                            @endif
+                        </li>
+                        <li class="nav-item">
+                            @if (Auth::check())
+                            @else
+                            <a class="nav-link" href="{{ route('register') }}" target="_blank">
+                                <div>Register</div>
+                            </a>
+                            @endif
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="navbar-nav secondary-menu flex-row">
+                <li class="nav-item">
+                    <a class="nav-link dark-mode-icon" href="javascript:;">
+                        <div class="mode-icon">
+                            <i class="bi bi-moon"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
 
-  </header>
- 
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
     <!--end top header-->
 
 
@@ -126,7 +132,7 @@
             <div class="container">
                 <div class="d-flex align-items-center px-3 py-2 border mb-4">
                     <div class="text-start">
-                    <h4 class="mb-0 h4 fw-bold">My Bag ({{ count($cartItems) }} items)</h4>
+                        <h4 class="mb-0 h4 fw-bold">My Bag ({{ count($cartItems) }} items)</h4>
                     </div>
                     <div class="ms-auto">
                         <button type="button" class="btn btn-light btn-ecomm">Continue Shopping</button>
@@ -134,7 +140,6 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-12 col-xl-8">
-
                         @foreach ($cartItems as $cartItem)
                         <div class="card rounded-0 mb-3">
                             <div class="card-body">
@@ -146,36 +151,56 @@
                                     <div class="product-info flex-grow-1">
                                         <h5 class="fw-bold mb-0">{{ $cartItem->product->title }}</h5>
                                         <div class="product-price d-flex align-items-center gap-2 mt-3">
-                                            <div class="h6 fw-bold">{{ number_format($cartItem->product->price, 2) }} bdt
-                                            </div>
-                                            <!-- You can add discount and original price here if needed -->
+                                            <div class="h6 fw-bold">{{ number_format($cartItem->product->price, 2) }}
+                                                bdt</div>
                                         </div>
                                         <div class="mt-3 hstack gap-2">
-                                            <!-- <button type="button" class="btn btn-sm btn-light border rounded-0"
-                                                data-bs-toggle="modal" data-bs-target="#SizeModal">Size : M</button> -->
-                                            <button type="button" class="btn btn-sm btn-light border rounded-0"
-                                                data-bs-toggle="modal" data-bs-target="#QtyModal">Qty : {{
-                                                $cartItem->quantity }}</button>
+                                            <form action="{{ route('cart.edit', ['cart' => $cartItem->id]) }}"
+                                                method="post">
+                                                @csrf
+                                                @method('PUT')
+                                                <label for="quantity" class="visually-hidden">Quantity:</label>
+                                                <div class="input-group">
+                                                    <input type="number" name="quantity" id="quantity"
+                                                        class="form-control" value="{{ $cartItem->quantity }}" min="1"
+                                                        required>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="d-none d-lg-block vr"></div>
                                     <div class="d-grid gap-2 align-self-start align-self-lg-center">
-                                    <form action="{{ route('cart.delete', ['cart' => $cartItem->id]) }}" method="post">
-                                            
+                                        <form action="{{ route('cart.delete', ['cart' => $cartItem->id]) }}"
+                                            method="post">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-ecomm"><i
                                                     class="bi bi-x-lg me-2"></i>Remove</button>
                                         </form>
-                           
                                     </div>
                                 </div>
                             </div>
                         </div>
                         @endforeach
 
+                        @push('scripts')
+                        <script>
+                            function incrementQuantity(button) {
+                                var input = button.parentNode.querySelector('input[type=number]');
+                                input.stepUp();
+                            }
 
-                        
+                            function decrementQuantity(button) {
+                                var input = button.parentNode.querySelector('input[type=number]');
+                                input.stepDown();
+                            }
+                        </script>
+                        @endpush
+
+
+
+
                     </div>
                     <div class="col-12 col-xl-4">
                         <div class="card rounded-0 mb-3">
@@ -227,69 +252,69 @@
 
     <!--start footer-->
     <section class="footer-section bg-section-2 section-padding">
-    <div class="container">
-       <div class="row row-cols-1 row-cols-lg-4 g-4">
-        <div class="col">
-          <div class="footer-widget-6">
-            <img src="assets/images/logo.webp" class="logo-img mb-3" alt="">
-            <h5 class="mb-3 fw-bold">About Us</h5>
-             <p class="mb-2">University Project</p>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="footer-widget-6">
+                        <img src="assets/images/logo.webp" class="logo-img mb-3" alt="">
+                        <h5 class="mb-3 fw-bold">About Us</h5>
+                        <p class="mb-2">University Project</p>
 
-             <a class="link-dark" href="javascript:;">Read More</a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="footer-widget-7">
-            <h5 class="mb-3 fw-bold">Explore</h5>
-             <ul class="widget-link list-unstyled">
-               <li><a href="javascript:;">Fashion</a></li>
-               <li><a href="javascript:;">Women</a></li>
-               <li><a href="javascript:;">Furniture</a></li>
-               <li><a href="javascript:;">Shoes</a></li>
-               <li><a href="javascript:;">Topwear</a></li>
-               <li><a href="javascript:;">Brands</a></li>
-               <li><a href="javascript:;">Kids</a></li>
-             </ul>
-          </div>
-        </div>
-        <div class="col">
-          <div class="footer-widget-8">
-            <h5 class="mb-3 fw-bold">Company</h5>
-             <ul class="widget-link list-unstyled">
-               <li><a href="javascript:;">About Us</a></li>
-               <li><a href="javascript:;">Contact Us</a></li>
-               <li><a href="javascript:;">FAQ</a></li>
-               <li><a href="javascript:;">Privacy</a></li>
-               <li><a href="javascript:;">Terms</a></li>
-               <li><a href="javascript:;">Complaints</a></li>
-             </ul>
-          </div>
-        </div>
-        <div class="col">
-          <div class="footer-widget-9">
-            <h5 class="mb-3 fw-bold">Follow Us</h5>
-             <div class="social-link d-flex align-items-center gap-2">
-               <a href="javascript:;"><i class="bi bi-facebook"></i></a>
-               <a href="javascript:;"><i class="bi bi-twitter"></i></a>
-               <a href="javascript:;"><i class="bi bi-linkedin"></i></a>
-               <a href="javascript:;"><i class="bi bi-youtube"></i></a>
-               <a href="javascript:;"><i class="bi bi-instagram"></i></a>
-             </div>
-             <div class="mb-3 mt-3">
-              <h5 class="mb-0 fw-bold">Support</h5>
-              <p class="mb-0 text-muted">rinvee@rinvee.com</p>
-             </div>
-             <div class="">
-              <h5 class="mb-0 fw-bold">Toll Free</h5>
-              <p class="mb-0 text-muted">017********</p>
-             </div>
-          </div>
-        </div>
-       </div><!--end row-->
+                        <a class="link-dark" href="javascript:;">Read More</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-widget-7">
+                        <h5 class="mb-3 fw-bold">Explore</h5>
+                        <ul class="widget-link list-unstyled">
+                            <li><a href="javascript:;">Fashion</a></li>
+                            <li><a href="javascript:;">Women</a></li>
+                            <li><a href="javascript:;">Furniture</a></li>
+                            <li><a href="javascript:;">Shoes</a></li>
+                            <li><a href="javascript:;">Topwear</a></li>
+                            <li><a href="javascript:;">Brands</a></li>
+                            <li><a href="javascript:;">Kids</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-widget-8">
+                        <h5 class="mb-3 fw-bold">Company</h5>
+                        <ul class="widget-link list-unstyled">
+                            <li><a href="javascript:;">About Us</a></li>
+                            <li><a href="javascript:;">Contact Us</a></li>
+                            <li><a href="javascript:;">FAQ</a></li>
+                            <li><a href="javascript:;">Privacy</a></li>
+                            <li><a href="javascript:;">Terms</a></li>
+                            <li><a href="javascript:;">Complaints</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-widget-9">
+                        <h5 class="mb-3 fw-bold">Follow Us</h5>
+                        <div class="social-link d-flex align-items-center gap-2">
+                            <a href="javascript:;"><i class="bi bi-facebook"></i></a>
+                            <a href="javascript:;"><i class="bi bi-twitter"></i></a>
+                            <a href="javascript:;"><i class="bi bi-linkedin"></i></a>
+                            <a href="javascript:;"><i class="bi bi-youtube"></i></a>
+                            <a href="javascript:;"><i class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <h5 class="mb-0 fw-bold">Support</h5>
+                            <p class="mb-0 text-muted">rinvee@rinvee.com</p>
+                        </div>
+                        <div class="">
+                            <h5 class="mb-0 fw-bold">Toll Free</h5>
+                            <p class="mb-0 text-muted">017********</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end row-->
 
 
-    </div>
-  </section><!--end footer-->
+        </div>
+    </section><!--end footer-->
 
     <footer class="footer-strip text-center py-3 bg-section-2 border-top positon-absolute bottom-0">
         <p class="mb-0 text-muted">© 2022. www.example.com | All rights reserved.</p>

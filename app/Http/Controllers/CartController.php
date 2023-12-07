@@ -43,17 +43,20 @@ class CartController extends Controller
         }
         return redirect()->route('cart.index')->with('success', 'Product added to cart successfully');
     }
-    public function editCart(Request $request, $cartId)
-    {
-        $request->validate([
-            'quantity' => 'required|integer|min:1',
-        ]);
-        $cartItem = Cart::findOrFail($cartId);
-        $cartItem->update([
-            'quantity' => $request->input('quantity'),
-        ]);
-        return redirect()->route('cart.index')->with('success', 'Cart item updated successfully');
-    }
+
+        public function editCart(Request $request, $cartId)
+        {
+            $request->validate([
+                'quantity' => 'required|integer|min:1',
+            ]);
+
+            $cartItem = Cart::findOrFail($cartId);
+            $cartItem->update([
+                'quantity' => $request->input('quantity'),
+            ]);
+
+            return redirect()->route('cart.index')->with('success', 'Cart item updated successfully');
+        }
 
     public function deleteFromCart($cartId)
     {

@@ -60,10 +60,16 @@
                     <a class="nav-link" href="{{ route('cart.index') }}">Cart</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('product.index') }}">Product</a>
+                </li>
+                <li class="nav-item">
               @if (Auth::check())
               <a class="nav-link" href="#">
                 <div>Hello, {{ Auth::user()->name }}</div>
               </a>
+              <li class="nav-item">
+                                <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+                            </li>
               @else
               <a class="nav-link" href="{{ route('login') }}" target="_blank">
                 <div>Login</div>
@@ -90,10 +96,7 @@
             </a>
         </li>
         <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
-            <a class="nav-link position-relative" href="javascript:;">
-                <div class="cart-badge">0</div>
-                <i class="bi bi-basket2"></i>
-            </a>
+sayonara
         </li>
     </ul>
 </nav>
